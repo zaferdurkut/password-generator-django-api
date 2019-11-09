@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . /app
 
 RUN apt-get update \
-   && apt-get upgrade -y \
+   && apt-get upgrade -y\
    && apt-get install -y \
    build-essential \
    ca-certificates \
@@ -25,10 +25,13 @@ RUN apt-get update \
    git \
    make \
    ssh \
+   libsm6 \
+   libxext6 \
+   libxrender-dev \
    && apt-get autoremove \
    && apt-get clean
 
 
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
-
+CMD alias python='/usr/bin/python3'
