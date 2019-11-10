@@ -144,3 +144,8 @@ Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametr
 - Response
 
 ![password](password_generator/api/static/password.jpg "password")
+
+### health_check - GET
+http://localhost:8080/health_check/ adresinden servis durumunu görüntüleyebilirsiniz.
+
+
