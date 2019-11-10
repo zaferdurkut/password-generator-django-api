@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'django.contrib.postgres',
     'health_check',
+    'rest_framework_swagger',
     'health_check.db',                          # stock Django health checkers
     'django_filters',
     'rest_framework',
@@ -139,8 +140,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+# PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+# STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 
 STATIC_URL = '/static/'
 
