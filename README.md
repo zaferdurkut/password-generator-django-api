@@ -1,5 +1,11 @@
 # Password Generator Django Rest Service
-Bu projede Django Rest ile verilen parametrelere göre **rasgele** password üreten, istenirse üretilen password'lerin db ye kayıt edilmesi ve görüntü olarak kullanıcya 
+Bu projede Django Rest ile verilen parametrelere göre **rasgele** password üreten, istenirse üretilen password'lerin db ye kayıt edilmesi ve görüntü olarak kullanıcya sunulmasını amaçlayan bir projedir. Projede;
+- Django Rest Framework
+- Django jet
+- Django Swagger
+- Postgresql veritabanı
+- Opencv
+kullanılmıştır.
 
 ## Servisin Kurulumu
 
