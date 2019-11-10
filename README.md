@@ -106,12 +106,12 @@ Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametr
 "use_upper" : "True",
 "use_lower" : "True" ,
 "use_digits" : "False",
-"use_punctuation" : "False" ,
+"use_punctuation" : "True" ,
 "use_space" : "False",
 "additional": "" ,
 "blacklist" : "" ,
 "length": 22 ,
-"max_duplicate_chars" :1
+"max_duplicate_chars" :2
 }
 ```
 - Response
@@ -127,12 +127,12 @@ Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametr
 "use_upper" : "True",
 "use_lower" : "True" ,
 "use_digits" : "False",
-"use_punctuation" : "False" ,
+"use_punctuation" : "True" ,
 "use_space" : "False",
 "additional": "" ,
 "blacklist" : "" ,
 "length": 22 ,
-"max_duplicate_chars" :1
+"max_duplicate_chars" :2
 }
 ```
 - Response
