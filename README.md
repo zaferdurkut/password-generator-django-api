@@ -67,6 +67,8 @@ Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametr
 - Request Body
 ```
 {
+"is_image" : "True",
+"is_save" : "True",
 "use_upper" : "True",
 "use_lower" : "True" ,
 "use_digits" : "False",
@@ -82,68 +84,11 @@ Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametr
 ```
 "sZKzjWfvqgxFemAIOUPXuY"
 ```
-
-### create_and_save_password - GET 
-Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametrelere uygun olarak random password üretir ve string olarak döndürür. Buna ek olarak üretilen password'ü db ye kayıt eder.
-- Request Body
-```
-{
-"use_upper" : "True",
-"use_lower" : "True" ,
-"use_digits" : "False",
-"use_punctuation" : "False" ,
-"use_space" : "False",
-"additional": "" ,
-"blacklist" : "" ,
-"length": 22 ,
-"max_duplicate_chars" :1
-}
-```
-- Response
-```
-"sZKzjWfvqgxFemAIOUPXuY"
-```
-
-### create_password_with_image  - GET 
-Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametrelere uygun olarak random password üretir ve jpeg olarak üretilen password'un bulunduğu resmi döndürür. 
-- Request Body
-```
-{
-"use_upper" : "True",
-"use_lower" : "True" ,
-"use_digits" : "False",
-"use_punctuation" : "True" ,
-"use_space" : "False",
-"additional": "" ,
-"blacklist" : "" ,
-"length": 22 ,
-"max_duplicate_chars" :2
-}
-```
-- Response
-
+#### is_image is True
+Response
 ![password](password_generator/api/static/password.jpg "password")
-
-
-### create_and_save_password_with_image - GET 
-Bu method ile aşağıda bulunan body ile gönderildiğinde verdiğiniz parametrelere uygun olarak random password üretir ve jpeg olarak üretilen password'un bulunduğu resmi döndürür. Buna ek olarak üretilen password'ü db ye kayıt eder.
-- Request Body
-```
-{
-"use_upper" : "True",
-"use_lower" : "True" ,
-"use_digits" : "False",
-"use_punctuation" : "True" ,
-"use_space" : "False",
-"additional": "" ,
-"blacklist" : "" ,
-"length": 22 ,
-"max_duplicate_chars" :2
-}
-```
-- Response
-
-![password](password_generator/api/static/password.jpg "password")
+#### is_save is True
+Üretilen şifre döndürüldükten sonra dbye kayıt olur.
 
 ### health_check - GET
 http://localhost:8080/health_check/ adresinden servis durumunu görüntüleyebilirsiniz.
